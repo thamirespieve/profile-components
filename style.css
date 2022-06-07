@@ -62,6 +62,14 @@ header::before {
 
 }
 
+header .wrapper-user {
+ display: flex;
+ flex-direction: column;
+ justify-items: center;
+ align-items: center;
+}
+
+
 header img#logo {
   width: 100px;
   height: 100px;
@@ -145,3 +153,38 @@ header button:hover {
   transform: scale(1.1);
 }
 
+@media (min-width:1000px) {
+
+  :root {
+    --fc-body: #a29f9f;
+  
+  }
+
+  .page{
+  
+    max-width: 80.4rem;
+  }
+
+  header {
+    flex-direction:row ;
+    justify-content: space-between;
+    padding:5rem 15rem 0;
+  }
+  
+
+  header .wrapper-user {
+    
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  
+  header .user {
+    display: flex;
+    padding-top: 5px;
+  }
+
+  .cards-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
